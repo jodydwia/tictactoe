@@ -1,0 +1,87 @@
+/*******tic-tac-toe******/
+.game_name {
+  text-align: center;
+  font-size: 2.8rem;
+}
+
+.score {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-prepend.input-append {
+  width: 100%;
+}
+
+.input-prepend.input-append .win_text,
+.input-prepend.input-append .times_text{
+  width: 25%;
+}
+
+.input-prepend.input-append .win_times {
+  background: var(--white);
+  width: 50%;
+}
+
+.add-on {
+  margin: 0 !important;
+  height: 4rem !important;
+  text-align: center !important;
+  line-height: 4rem!important;
+  padding: 0 !important;
+}
+
+.disable {
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.game {
+  width: 100%;
+  height: 45rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.game li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  font-size: 4rem;
+  color: var(--grey);
+}
+
+.game li.disable {
+  color: var(--white);
+}
+
+.reset {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  color: var(--white);
+  font-size: 2rem;
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+  outline: none;
+  width: 100%;
+}
+
+li::-moz-selection {
+  background: none;
+  color: #000;
+}
+
+li::selection {
+  background: none;
+  color: #000;
+}
+/*******tic-tac-toe END******/

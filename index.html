@@ -7,23 +7,21 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Tic Tac Toe game</title>
       <link rel="stylesheet prefetch" href="https://getbootstrap.com/2.3.2/assets/css/bootstrap.css" />
-      <link rel="stylesheet" href="css/general.css" />
       <link rel="stylesheet" href="css/style.css" />
-      <link rel="stylesheet" href="css/queries.css" />
   </head>
   <body>
     <div id="tic-tac-toe" class="container">
         <h1 class="game_name">Tic Tac Toe</h1>
-        <div class="score_board">
-          <div class="input-prepend input-append">
+        <div class="score">
+          <div class="score__board input-prepend input-append">
               <span class="add-on win_text">O won</span>
               <strong id="o_win" class="win_times add-on">0</strong>
-              <span class="add-on times">time(s)</span>
+              <span class="add-on times_text">time(s)</span>
             </div>
-            <div class="input-prepend input-append">
+            <div class="score__board input-prepend input-append">
               <span class="add-on win_text">X won</span>
               <strong id="x_win" class="win_times add-on">0</strong>
-              <span class="add-on times">time(s)</span>
+              <span class="add-on times_text">time(s)</span>
             </div>
         </div>
         <ul id="game" class="game">
@@ -37,9 +35,9 @@
           <li id="eight" class="btn">+</li>
           <li id="nine" class="btn">+</li>
         </ul>
-        <a href="#" id="reset" class="reset btn-success btn">Restart</a>
+        <a href="#" id="reset" class="btn btn-success reset">Restart</a>
     </div>
-    <script src="https://code.jquery.com/jquery-1.7.2.min.js"></script>
-    <script type="module" src="js/index.js"></script>
+    <script defer src="https://code.jquery.com/jquery-1.7.2.min.js"></script>
+    <script defer type="module" src="js/index.js"></script>
   </body>
 </html>
