@@ -1,0 +1,37 @@
+
+:root {
+    --white: #fff;
+    --grey: #ccc;
+    --smaller-desktop: 44rem;
+    --landscape-tablet: 44rem;
+    --tablet: 44rem;
+    --smaller-tablet: 40rem;
+    --phone: 32rem;
+    --font-size-landscape-tablet: 56.25%;
+    --font-size-tablet: 50%;;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* font-size: 10px; */
+    /* 10px / 16px = 0.625 = 62.5% */
+    /* Percentage of user's browser font-size setting */
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 45rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}

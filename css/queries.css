@@ -1,0 +1,88 @@
+/* rem and em do NOT depend on html font-size in media queries! Instead, 1rem = 1em = 16px */
+
+/**************************/
+/* BELOW 1344px (Smaller desktops) */
+/**************************/
+
+@media (max-width: 84em) {
+    .container {
+        max-width: var(--smaller-desktop);
+    }
+
+    .game {
+        max-width: var(--smaller-desktop);
+        max-height: var(--smaller-desktop);
+    }
+}
+
+/**************************/
+/* BELOW 1200px (Landscape Tablets) */
+/**************************/
+
+@media (max-width: 75em) {
+    html {
+        /* 9px / 16px  */
+        font-size: var(--font-size-landscape-tablet);
+    }
+
+    .container {
+        max-width: var(--landscape-tablet);
+    }
+
+    .game {
+        max-width: var(--landscape-tablet);
+        max-height: var(--landscape-tablet);
+    }
+
+}
+
+/**************************/
+/* BELOW 944px (Tablets) */
+/**************************/
+
+@media (max-width: 59em) {
+    html {
+        /* 8px / 16px = 0.5 = 50% */
+        font-size: var(--font-size-tablet);
+    }
+
+    .container {
+        max-width: var(--tablet);
+    }
+
+    .game {
+        max-width: var(--tablet);
+        max-height: var(--tablet);
+    }
+
+}
+
+/**************************/
+/* BELOW 704px (Smaller tablets) */
+/**************************/
+
+@media (max-width: 44em) {
+    .container {
+        max-width: var(--smaller-tablet);
+    }
+
+    .game {
+        max-width: var(--smaller-tablet);
+        max-height: var(--smaller-tablet);
+    }
+}
+
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+@media (max-width: 34em) {
+
+    .container {
+        max-width: var(--phone);
+    }
+
+    .game {
+        max-width: var(--phone);
+        max-height: var(--phone);
+    }
+}
