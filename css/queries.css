@@ -10,8 +10,7 @@
     }
 
     .game {
-        max-width: var(--smaller-desktop);
-        max-height: var(--smaller-desktop);
+        height: var(--smaller-desktop);
     }
 }
 
@@ -30,8 +29,7 @@
     }
 
     .game {
-        max-width: var(--landscape-tablet);
-        max-height: var(--landscape-tablet);
+        height: var(--landscape-tablet);
     }
 
 }
@@ -51,8 +49,7 @@
     }
 
     .game {
-        max-width: var(--tablet);
-        max-height: var(--tablet);
+        height: var(--tablet);
     }
 
 }
@@ -67,8 +64,7 @@
     }
 
     .game {
-        max-width: var(--smaller-tablet);
-        max-height: var(--smaller-tablet);
+        height: var(--smaller-tablet);
     }
 }
 
@@ -82,7 +78,6 @@
     }
 
     .game {
-        max-width: var(--phone);
-        max-height: var(--phone);
+        height: var(--phone);
     }
 }
