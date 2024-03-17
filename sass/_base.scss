@@ -7,17 +7,19 @@ $font-primary: Arial, Helvetica, sans-serif;
 $font-secondary: Georgia, 'Times New Roman', Times, serif;
 
 // RESPONSIVE BREAKPOINTS
-/* rem and em do NOT depend on html font-size in media queries! Instead, 1rem = 1em = 16px */
+// rem and em do NOT depend on html font-size in media queries! Instead, 1rem = 1em = 16px
 $bp-largest: 75em;   // 1200px
 $bp-large: 62.5em;   // 1000px
 $bp-medium: 50em;    // 800px;
 $bp-small: 37.5em;    // 600px;
+$bp-smallest: 25em;    // 400px;
 
 // RESPONSIVE GAME
-$desktop: 44rem;
-$tablet: 44rem;
-$smaller-tablet: 40rem;
-$phone: 32rem;
+$desktop: 65rem;
+$tablet: 65rem;
+$smaller-tablet: 62.5rem;
+$phone: 45rem;
+$smalller-phone: 35rem;
 
 *,
 *::before,
@@ -28,9 +30,9 @@ $phone: 32rem;
 }
 
 html {
-  /* font-size: 10px; */
-  /* 10px / 16px = 0.625 = 62.5% */
-  /* Percentage of user's browser font-size setting */
+  // font-size: 10px;
+  // 10px / 16px = 0.625 = 62.5%
+  // Percentage of user's browser font-size setting
   font-size: 62.5%;
   box-sizing: border-box;
 
@@ -44,21 +46,33 @@ body {
 }
 
 .container {
-  max-width: 45rem;
+  width: $desktop;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   row-gap: 1rem;
 
+  @media only screen and (max-width: $bp-largest) {
+    width: $desktop;
+  }
+
   @media only screen and (max-width: $bp-large) {
-    max-width: $tablet;
+    width: $tablet;
   }
 
   @media only screen and (max-width: $bp-medium) {
-    max-width: $smaller-tablet;
+    width: $smaller-tablet;
   }
 
   @media only screen and (max-width: $bp-small) {
-    max-width: $phone;
+    width: $phone;
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    width: $smalller-phone;
+  }
+
+  @media only screen and (max-height: $bp-medium) {
+    width: $phone;
   }
 }

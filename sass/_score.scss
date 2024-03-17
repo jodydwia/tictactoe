@@ -1,0 +1,28 @@
+.score {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__board {
+    width: 100%;
+
+    .win_text, .times_text {
+      width: 25%;
+    }
+
+    .win_times {
+      background: $color-white;
+      width: 50%;
+    }
+
+    .add-on {
+      margin: 0 !important;
+      height: 4rem !important;
+      text-align: center !important;
+      line-height: 4rem!important;
+      padding: 0 !important;
+    }
+  }
+
+}
