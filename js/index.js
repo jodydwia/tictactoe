@@ -23,7 +23,7 @@ scaleInput.addEventListener('change', function () {
 for (let i = 3; i <= 9; i++) {
   const option = document.createElement('option');
   option.value = i.toString();
-  option.label = i.toString();
+  option.label = i.toString()+" x "+i.toString();
   scaleInput.append(option);
 }
 
