@@ -3,15 +3,15 @@ import {X, O, DISABLE, BTN_PRIMARY, BTN_INFO, WINS, WIN_ID_EL} from "./constants
 
 let count = 0;
 
-export default function clickCell(el, win) {
-    count % 2 === 0 ? click(O, el, win) : click(X, el, win);
+export default function clickCell(el, win, cellsId) {
+    count % 2 === 0 ? click(O, el, win, cellsId) : click(X, el, win, cellsId);
 }
 
-function click(n, el, win) {
+function click(n, el, win, cellsId) {
     count++;
     $(el).text(n);
     $(el).addClass(`${DISABLE} ${n} ${n === O ? BTN_PRIMARY : BTN_INFO}`);
-    if (winRule(n)) {
+    if (winRule(n, cellsId)) {
         alert(`${n.toUpperCase()} ${WINS}`);
         count = 0;
         win[n]++;

@@ -18,6 +18,13 @@
           <h1 class="game__name">Tic Tac Toe</h1>
       </header>
     <div id="tic-tac-toe" class="container">
+        <div class="scale__wrapper">
+            <label for="scale">Scale:</label>
+            <select name="scale__select" id="scale">
+                <option value="0">Choose Scale</option>
+            </select>
+            <button id="start" class="btn__start">start</button>
+        </div>
         <div class="score">
           <div class="score__board input-prepend input-append">
               <span class="add-on win_text">O won</span>
@@ -31,15 +38,6 @@
             </div>
         </div>
         <ul id="game" class="game">
-          <li id="one" class="btn">+</li>
-          <li id="two" class="btn">+</li>
-          <li id="three" class="btn">+</li>
-          <li id="four" class="btn ">+</li>
-          <li id="five" class="btn">+</li>
-          <li id="six" class="btn">+</li>
-          <li id="seven" class="btn">+</li>
-          <li id="eight" class="btn">+</li>
-          <li id="nine" class="btn">+</li>
         </ul>
         <a href="#" id="reset" class="btn btn-success reset">Restart</a>
     </div>

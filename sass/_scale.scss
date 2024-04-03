@@ -1,0 +1,16 @@
+.scale__wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+
+  .btn__start {
+    width: 8rem;
+    height: 3rem;
+    margin-top: -1rem;
+  }
+
+  .scale__select {
+    margin: 0 !important;
+  }
+  }

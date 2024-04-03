@@ -8,8 +8,6 @@ export const DISABLE = 'disable';
 export const BTN_PRIMARY = 'btn-primary';
 export const BTN_INFO = 'btn-info';
 export const PLUS = '+';
-export const CELLS = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'];
-export const GAME_CELL = $('#game li');
 export const WIN_ID_EL = {
     o : $('#o_win'),
     x : $('#x_win')
